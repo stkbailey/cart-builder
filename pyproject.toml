@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cart-builder"
+version = "0.1.0"
+description = ""
+authors = ["Stephen Bailey <stkbailey@gmail.com>"]
+license = "Apache"
+readme = "README.md"
+packages = [{include = "cart_builder"}]
+
+[tool.poetry.dependencies]
+python = ">3.9.7,<3.10"
+requests = "^2.31.0"
+streamlit = "^1.27.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
